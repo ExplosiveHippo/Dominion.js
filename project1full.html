@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dominion - The Card Game</title>
+		<link href='http://fonts.googleapis.com/css?family=New+Rocker' rel='stylesheet' type='text/css'>
+		<link href='styles.css' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+	</head>
+
+	<body>
+	<div id="top">
+	<h1>Dominion - The Card Game</h1>
+
+	<h2 id="timer">Timer</h2>
+
+	</div>
+
+	<div id="welcome">
+		<h3>Welcome to Dominion!</h3>
+		<p>Dominion is a LCG (Living Card Game). The object is to purchase cards that will eventually lead you to buying victory points.
+		The player with the most victory points at the end of the game wins!</p>
+		<p>Each player starts with the same 10 cards (7 coppers and 3 estates). It's up to you to build the best deck to win the game!</p>
+		<p>To purchase a card simply click on the red + button that appears next to it. You can view the cards abilities by clicking on it.</p>
+		<p>To play action cards in your hand click the play button next to the card you'd like to play. It's that easy!</p>
+		<p>You may click on any card on the screen to get more details about the card</p>
+		<p>You may also choose to end your current turn (this will discard your current hand and you'll draw 5 more) at anytime by clicking the End Turn Button</p>
+		<img src='images/startbtn.png' id='startbtn' />
+		<img src='images/scoreboardbtn.png' id='scoreboardbtn' />
+	</div>
+
+	<div id="game-background">
+		<div id="action-cards">
+
+		</div>
+		<img src="images/endturn.png" id='endturn' />
+		<div id="tracker">
+				<h4 id="action-tracker">Actions: 1</h3>
+				<h4 id="buy-tracker">Buys: 1</h3>
+				<h4 id="treasure-tracker">Treasure: 0</h3>
+		</div>
+		<div id="score"> <!-- hidden at first...will display with correct data at timer end -->
+				<h3 id='winloss'></h3>
+				<div id='score-section'>
+						<p class="final">Your final score is:</p>
+						<p class="scorelg" id="playerscore"></p>
+						<p class="final">AI final score:</p>
+						<p class="scorelg" id="aiscore"></p>
+				</div>
+				<p id='name-prompt'>Enter Your Name and click add to Scoreboard!</p>
+				<input type='hidden' value='' name='score' id='scorehidden' /><input type='text' value='' name='name' id='name-field' maxlength="15" />
+				<img src='images/addscrbtn.png' id='addscorebtn'/>
+				<a href='project1.html'><img src='images/ngbtn.png' id='newgamebtn' /></a>
+		</div>
+
+		<div id="game-hand">
+
+		</div>
+
+	</div>
+
+	<script>
+	function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+// Usage:
+
+	preload([
+	    'CardImages/bazaar.jpg',
+	    'CardImages/cache.jpg',
+	    'CardImages/chancellor.jpg',
+	    'CardImages/copper.jpg',
+	    'CardImages/councilroom.jpg',
+	    'CardImages/duchy.jpg',
+	    'CardImages/estate.jpg',
+	    'CardImages/festival.jpg',
+	    'CardImages/gardens.jpg',
+	    'CardImages/gold.jpg',
+	    'CardImages/grandmarket.jpg',
+	    'CardImages/laboratory.jpg',
+	    'CardImages/margrave.jpg',
+	    'CardImages/market.jpg',
+	    'CardImages/oasis.jpg',
+	    'CardImages/province.jpg',
+	    'CardImages/silver.jpg',
+	    'CardImages/smithy.jpg',
+	    'CardImages/village.jpg',
+	    'CardImages/woodcutter.jpg',
+	    'CardImages/workersvillage.jpg'
+	]);
+
+	</script>
+
+	<script type="text/javascript" src="main-script.js"></script>
+
+	</body>
+
+</html>

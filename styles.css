@@ -1,0 +1,268 @@
+body{
+	background-image: url('images/castle_bg.jpg');
+	background-repeat: no-repeat;
+}
+
+p{
+	font-family: "helvetica";
+}
+
+#top{
+	width: 1000px;
+	margin: 0 auto;
+	height: 60px;
+}
+
+h1{
+	font-family: 'New Rocker', cursive;
+	/*text-align: center;*/
+	color: #FFFFFF;
+	font-size: 38px;
+	margin: 0;
+	padding-bottom: 20px;
+	float: left;
+	font-weight: 500;
+}
+
+h2{
+	font-family: 'helvetica';
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+
+h3{
+	font-family: 'New Rocker', cursive;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+#timer{
+	font-family: 'New Rocker', cursive;
+	color: #FFFFFF;
+	font-weight: 500;
+	float: right;
+}
+
+#game-background{
+	background-image: url('images/game-bg.png');
+	background-repeat: repeat-y;
+	width: 1000px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#game-hand{
+	position: absolute;
+	bottom: 0px;
+	left: 30px;
+}
+
+#action-cards{
+	position: absolute;
+	top:10px;
+	left: 30px;
+}
+
+.singleActionCardDiv{
+	display: inline;
+	float: left;
+	position: relative;
+}
+
+.singleHandCard{
+	display: inline;
+	float: left;
+	position: relative;
+	width: 10%;
+}
+
+.playbtn{
+	position: absolute;
+	left: -5px;
+	bottom: 0px;
+	visibility: visible;
+	cursor: pointer;
+}
+
+
+.costValue{
+    background-image: url("images/coin-bg.png");
+    background-repeat: no-repeat;
+    display: inline;
+    font-weight: bold;
+    left: 25px;
+    padding: 8px 11px 10px;
+    position: relative;
+    top: -5px;
+}
+
+.buybtn{
+	position: absolute;
+	top: 71px;
+	right: 0px;
+	cursor: pointer;
+}
+
+#score{
+ 	background-image: url("images/scorebg.png");
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	margin-left: -240px;
+    height: 450px;
+    visibility: hidden;
+    width: 500px;
+    z-index: 90;
+}
+
+#welcome{
+	background-image: url("images/scorebg.png");
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	margin-left: -240px;
+    height: 450px;
+    visibility: visible;
+    width: 500px;
+    z-index: 90;
+}
+
+#welcome p{
+	color: #FFFFFF;
+	width: 450px;
+	margin-left: 23px;
+	line-height: 18px;
+	font-size: 13px;
+	text-align: justify;
+}
+
+#welcome h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#startbtn{
+	position: relative;
+	left: 120px;
+	top: 15px;
+	cursor: pointer;
+}
+
+#scoreboardbtn{
+	position: relative;
+	top: 15px;
+	left: 150px;
+	cursor: pointer;
+}
+
+.final{
+	text-align: center!important;
+	font-size: 20px!important;
+	color: #FFFFFF!important;
+	font-family: 'helvetica';
+}
+
+#score{
+	visibility: hidden;
+}
+
+.scorelg{
+	text-align: center;
+	font-size: 40px;
+	color: #FFFFFF;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+#score-table{
+	width: 450px;
+	margin-left: 60px;
+}
+
+#score-table td{
+	color: #FFFFFF;
+	font-family: 'helvetica';
+	font-size: 17px;
+}
+
+#score-table th{
+	color: #FFFFFF;
+	font-family: 'helvetica';
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#addscorebtn{
+	position: absolute;
+	bottom: 30px;
+	left: 60px;
+	cursor: pointer;
+}
+
+#name-prompt{
+	color:#FFFFFF;
+	font-size: 18px;
+	text-align: center;
+}
+
+#name-field{
+	width: 250px;
+	margin: 0 auto;
+	display: block;
+}
+
+#newgamebtn{
+	position: absolute;
+	bottom: 30px;
+	right: 70px;
+}
+
+#newgamebtnscore{
+	position: absolute;
+	bottom: 30px;
+	left: 80px;
+	cursor: pointer;
+}
+
+#backbtn {
+    left: 60px;
+    position: relative;
+    top: 15px;
+}
+
+#tracker {
+    background-color: #282626;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 90px;
+    position: absolute;
+    right: 40px;
+    top: 260px;
+    width: 150px;
+}
+
+#tracker h4 {
+    font-weight: 500;
+    margin: 5px;
+    padding-top: 5px;
+    font-family: 'helvetica';
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#endturn{
+	position: absolute;
+	right: 210px;
+	top: 290px;
+	cursor: pointer;
+}

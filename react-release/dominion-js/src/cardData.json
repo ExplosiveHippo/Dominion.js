@@ -1,5 +1,5 @@
 {
-  "cards": [
+  "cards": {
     "copper": {
       "actions": 0,
       "buys": 0,
@@ -273,5 +273,5 @@
       "type": "victory",
       "special": "Worth 1 victory point for every 10 cards in your hand"
     }
-  ]
+  }
 }

@@ -18,7 +18,6 @@ const imageMap = {
     margrave: require('./assets/CardImages/margrave.jpg'),
     market: require('./assets/CardImages/market.jpg'),
     oasis: require('./assets/CardImages/oasis.jpg'),
-    province: require('./assets/CardImages/province.jpg'),
     smithy: require('./assets/CardImages/smithy.jpg'),
     village: require('./assets/CardImages/village.jpg'),
     woodcutter: require('./assets/CardImages/woodcutter.jpg'),

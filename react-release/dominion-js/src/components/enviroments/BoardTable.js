@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import OrganismCard from '../organisms/Organism.card';
+import OrganismPlaySurface from '../organisms/Organism.playSurface';
 import cardJSON from '../../cardData';
 
 export default class BoardTable extends Component {
@@ -9,12 +9,11 @@ export default class BoardTable extends Component {
 		this.state = {
 
 		};
-		console.log(cardJSON);
 	}
 
 	render() {
 		return (
-			<OrganismCard />
+			<OrganismPlaySurface cards={cardJSON.cards} />
 		);
 	}
 }

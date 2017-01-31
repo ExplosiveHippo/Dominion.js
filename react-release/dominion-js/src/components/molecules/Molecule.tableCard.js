@@ -9,9 +9,8 @@ export default class tableCard extends Component {
 	}
 
 	render() {
-		console.log(this.props.cardData.smallImage);
 		return (
-			<img src={this.props.cardData.smallImage} role="presentation" />
+			<img src={imageMap[this.props.cardData.name]} role="presentation" />
 		);
 	}
 }

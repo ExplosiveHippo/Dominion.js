@@ -7,7 +7,7 @@ export default class playSurface extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			cards: this.props.cards
+			actionCards: this.props.cards.actions
 		};
 	}
 
@@ -17,15 +17,15 @@ export default class playSurface extends Component {
 
 	shuffleCards(){
 		console.log("shuffleCards");
-		let cards = this.state.cards;
-		console.log(cards);
-		for (var i = cards.length - 1; i > 0; i--) {
+		let actionCards = this.state.actionCards;
+		console.log(actionCards);
+		for (var i = actionCards.length - 1; i > 0; i--) {
 			var j = Math.floor(Math.random() * (i + 1));
-			var temp = cards[i];
-			cards[i] = cards[j];
-			cards[j] = temp;
+			var temp = actionCards[i];
+			actionCards[i] = actionCards[j];
+			actionCards[j] = temp;
 		}
-		return cards;
+		return actionCards;
 	}
 
 	renderCards(card, index){
@@ -42,7 +42,7 @@ export default class playSurface extends Component {
 	render() {
 		return (
 			<div className="playSurface">
-				{this.state.cards.map(this.renderCards)}
+				{this.state.actionCards.map(this.renderCards)}
 			</div>
 		);
 	}

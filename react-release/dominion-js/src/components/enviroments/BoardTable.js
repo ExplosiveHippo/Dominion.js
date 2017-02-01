@@ -13,7 +13,7 @@ export default class BoardTable extends Component {
 
 	render() {
 		return (
-			<OrganismPlaySurface cards={cardJSON.cards} />
+			<OrganismPlaySurface cards={cardJSON} />
 		);
 	}
 }

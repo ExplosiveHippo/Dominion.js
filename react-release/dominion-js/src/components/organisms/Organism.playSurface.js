@@ -7,7 +7,9 @@ export default class playSurface extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			actionCards: this.props.cards.actions
+			actionCards: this.props.cards.actions,
+			moneyCards: this.props.cards.money,
+			victoryCards: this.props.cards.victory
 		};
 	}
 
@@ -16,9 +18,7 @@ export default class playSurface extends Component {
 	}
 
 	shuffleCards(){
-		console.log("shuffleCards");
 		let actionCards = this.state.actionCards;
-		console.log(actionCards);
 		for (var i = actionCards.length - 1; i > 0; i--) {
 			var j = Math.floor(Math.random() * (i + 1));
 			var temp = actionCards[i];
@@ -39,10 +39,24 @@ export default class playSurface extends Component {
 		}
 	}
 
+	renderMoneyCards(card, index){
+		return(
+			<MoleculeTableCard cardData={card} key={index} />
+		)
+	}
+
+	renderVictoryCards(card, index){
+		return(
+			<MoleculeTableCard cardData={card} key={index} />
+		)
+	}
+
 	render() {
 		return (
 			<div className="playSurface">
 				{this.state.actionCards.map(this.renderActionCards)}
+				{this.state.moneyCards.map(this.renderMoneyCards)}
+				{this.state.victoryCards.map(this.renderVictoryCards)}
 			</div>
 		);
 	}

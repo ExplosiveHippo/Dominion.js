@@ -19,5 +19,16 @@
 			right: 0;
 		}
 	}
+}
 
+.playerHand{
+	.playerCard{
+		display: inline-block;
+		position: relative;
+		.playButton{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
 }

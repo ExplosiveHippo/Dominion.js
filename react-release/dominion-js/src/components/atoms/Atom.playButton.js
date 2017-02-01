@@ -7,8 +7,8 @@ export default class buyButton extends Component {
 
 	render() {
 		return (
-			<div className="buyButton">
-				<img src={imageMap.other.buyBtn} role="presentation" />
+			<div className="playButton">
+				<img src={imageMap.other.playBtn} role="presentation"/>
 			</div>
 		);
 	}

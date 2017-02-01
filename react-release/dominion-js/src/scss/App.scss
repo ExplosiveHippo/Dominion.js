@@ -1,5 +1,15 @@
 .playSurface{
 	.tableCard{
 		display: inline-block;
+		position: relative;
+		.cardCostIcon{
+			position: absolute;
+			bottom: 0;
+			p{
+				position: absolute;
+				left: 12px;
+				bottom: -6px;
+			}
+		}
 	}
 }

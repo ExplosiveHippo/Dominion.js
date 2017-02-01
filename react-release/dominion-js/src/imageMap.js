@@ -46,8 +46,20 @@ const imageMap = {
         village: require('./assets/CardImages/small/village.png'),
         woodcutter: require('./assets/CardImages/small/woodcutter.png'),
         workersvillage: require('./assets/CardImages/small/workersvillage.png')
+    },
+    other: {
+        scoreBoardBtn: require('./assets/images/scoreboard-btn.png'),
+        scoreBg: require('./assets/images/score-bg.png'),
+        backBtn: require('./assets/images/back-btn.png'),
+        buyBtn: require('./assets/images/buy-btn.png'),
+        castleBg: require('./assets/images/castle-bg.jpg'),
+        coinBg: require('./assets/images/coin-bg.png'),
+        endTurn: require('./assets/images/endturn-btn.png'),
+        gameBg: require('./assets/images/game-bg.png'),
+        ngBtn: require('./assets/images/ng-btn.png'),
+        playBtn: require('./assets/images/play-btn.png'),
+        startBtn: require('./assets/images/start-btn.png'),
     }
-	
 }
 
 module.exports = imageMap;

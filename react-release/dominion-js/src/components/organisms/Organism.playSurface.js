@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MoleculeTableCard from '../molecules/Molecule.tableCard';
+import MoleculePlayerTracker from '../molecules/Molecule.playerTracker';
 import '../../scss/App.scss';
 
 export default class playSurface extends Component {
@@ -49,12 +50,19 @@ export default class playSurface extends Component {
 		)
 	}
 
+	renderPlayerTracker(){
+		return(
+			<MoleculePlayerTracker />
+		)
+	}
+
 	render() {
 		return (
 			<div className="playSurface">
 				{this.props.cards.actions.map(this.renderActionCards)}
 				{this.props.cards.money.map(this.renderMoneyCards)}
 				{this.props.cards.victory.map(this.renderVictoryCards)}
+				{this.renderPlayerTracker()}
 			</div>
 		);
 	}

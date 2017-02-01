@@ -181,6 +181,34 @@
 				"remaining": 10,
 				"type": "action",
 				"special": ""
+			},
+			{
+				"name": "cache",
+				"actions": 0,
+				"buys": 0,
+				"cost": 5,
+				"worth": 3,
+				"points": 0,
+				"cards": 0,
+				"largeImage": "./assets/CardImages/cache.png",
+				"smallImage": "./assets/CardImages/small/cache.png",
+				"remaining": 10,
+				"type": "treasure",
+				"special": "When you buy this card you also gain 2 coppers"
+			},
+			{
+				"name": "gardens",
+				"actions": 0,
+				"buys": 0,
+				"cost": 4,
+				"worth": 0,
+				"points": 0,
+				"cards": 0,
+				"largeImage": "./assets/CardImages/gardens.png",
+				"smallImage": "./assets/CardImages/small/gardens.png",
+				"remaining": 10,
+				"type": "victory",
+				"special": "Worth 1 victory point for every 10 cards in your hand"
 			}
 		],
 		"money": [
@@ -269,34 +297,6 @@
 				"remaining": 8,
 				"type": "victory",
 				"special": ""
-			},
-			{
-				"name": "cache",
-				"actions": 0,
-				"buys": 0,
-				"cost": 5,
-				"worth": 3,
-				"points": 0,
-				"cards": 0,
-				"largeImage": "./assets/CardImages/cache.png",
-				"smallImage": "./assets/CardImages/small/cache.png",
-				"remaining": 10,
-				"type": "treasure",
-				"special": "When you buy this card you also gain 2 coppers"
-			},
-			{
-				"name": "garden",
-				"actions": 0,
-				"buys": 0,
-				"cost": 4,
-				"worth": 0,
-				"points": 0,
-				"cards": 0,
-				"largeImage": "./assets/CardImages/garden.png",
-				"smallImage": "./assets/CardImages/small/garden.png",
-				"remaining": 10,
-				"type": "victory",
-				"special": "Worth 1 victory point for every 10 cards in your hand"
 			}
 		]
 }

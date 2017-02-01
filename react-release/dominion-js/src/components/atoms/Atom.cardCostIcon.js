@@ -8,9 +8,10 @@ export default class cardCostIcon extends Component {
 	render() {
 		return (
 			<div className="cardCostIcon">
-				<p>0</p>
+				<p>{this.props.cost}</p>
 				<img src={imageMap.other.coinBg} role="presentation" />
 			</div>
 		);
 	}
+
 }

@@ -9,9 +9,10 @@ export default class tableCard extends Component {
 		return (
 			<div className="tableCard">
 				<img src={imageMap.small[this.props.cardData.name]} role="presentation" />
-				<AtomCardCostIcon />
+				<AtomCardCostIcon cost={this.props.cardData.cost}/>
 				<AtombuyButton />
 			</div>
 		);
 	}
+
 }

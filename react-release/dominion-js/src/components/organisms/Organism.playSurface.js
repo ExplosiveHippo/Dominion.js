@@ -28,7 +28,7 @@ export default class playSurface extends Component {
 		return actionCards;
 	}
 
-	renderCards(card, index){
+	renderActionCards(card, index){
 
 		// Dominion is played with only 10 table cards
 		if(index <= 9){
@@ -42,7 +42,7 @@ export default class playSurface extends Component {
 	render() {
 		return (
 			<div className="playSurface">
-				{this.state.actionCards.map(this.renderCards)}
+				{this.state.actionCards.map(this.renderActionCards)}
 			</div>
 		);
 	}

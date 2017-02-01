@@ -32,7 +32,6 @@ export default class playSurface extends Component {
 
 		// Dominion is played with only 10 table cards
 		if(index <= 9){
-			console.log(index);
 			return(
 				<MoleculeTableCard cardData={card} key={index}/>
 			)

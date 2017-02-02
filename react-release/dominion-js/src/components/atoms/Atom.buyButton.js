@@ -5,11 +5,21 @@ import '../../scss/App.scss';
 
 export default class buyButton extends Component {
 
+	maybeRenderBuyButton(){
+		if(this.props.canBuy){
+			return(
+				<img src={imageMap.other.buyBtn} role="presentation" />
+			)
+		}
+		
+	}
+
 	render() {
 		return (
 			<div className="buyButton">
-				<img src={imageMap.other.buyBtn} role="presentation" />
+				{this.maybeRenderBuyButton()}
 			</div>
 		);
 	}
+	
 }

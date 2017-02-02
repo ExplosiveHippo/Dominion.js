@@ -6,11 +6,12 @@ import AtombuyButton from '../atoms/Atom.buyButton'
 export default class tableCard extends Component {
 
 	render() {
+
 		return (
 			<div className="tableCard">
 				<img src={imageMap.small[this.props.cardData.name]} role="presentation" />
 				<AtomCardCostIcon cost={this.props.cardData.cost}/>
-				<AtombuyButton />
+				<AtombuyButton canBuy={this.props.handWorth.treasure >= this.props.cardData.cost}/>
 			</div>
 		);
 	}

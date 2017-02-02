@@ -6,14 +6,20 @@ import '../../scss/App.scss';
 export default class playSurface extends Component {
 	constructor(props) {
 		super(props);
+
 		this.state = {
 			actionCards: this.props.cards.actions,
 			moneyCards: this.props.cards.money,
 			victoryCards: this.props.cards.victory
 		};
+
+		this.renderActionCards = this.renderActionCards.bind(this);
+		this.renderMoneyCards = this.renderMoneyCards.bind(this);
+		this.renderVictoryCards = this.renderVictoryCards.bind(this);
 	}
 
 	componentWillMount(){
+		// This is setup for the play surface, which starts with getting random action cards
 		this.shuffleCards();
 	}
 
@@ -32,20 +38,20 @@ export default class playSurface extends Component {
 		// Dominion is played with only 10 table cards
 		if(index <= 9){
 			return(
-				<MoleculeTableCard cardData={card} key={index}/>
+				<MoleculeTableCard cardData={card} handWorth={this.props.handWorth} key={index}/>
 			)
 		}
 	}
 
 	renderMoneyCards(card, index){
 		return(
-			<MoleculeTableCard cardData={card} key={index} />
+			<MoleculeTableCard cardData={card} handWorth={this.props.handWorth} key={index} />
 		)
 	}
 
 	renderVictoryCards(card, index){
 		return(
-			<MoleculeTableCard cardData={card} key={index} />
+			<MoleculeTableCard cardData={card} handWorth={this.props.handWorth} key={index} />
 		)
 	}
 

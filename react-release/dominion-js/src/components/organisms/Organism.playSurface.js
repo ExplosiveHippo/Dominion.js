@@ -29,7 +29,6 @@ export default class playSurface extends Component {
 	}
 
 	renderActionCards(card, index){
-
 		// Dominion is played with only 10 table cards
 		if(index <= 9){
 			return(
@@ -52,7 +51,7 @@ export default class playSurface extends Component {
 
 	renderPlayerTracker(){
 		return(
-			<MoleculePlayerTracker />
+			<MoleculePlayerTracker handWorth={this.props.handWorth} />
 		)
 	}
 

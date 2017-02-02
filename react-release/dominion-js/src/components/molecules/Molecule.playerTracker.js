@@ -5,9 +5,9 @@ export default class playerTracker extends Component {
   render() {
     return (
     	<div className="playerTracker">
-			<p>Actions: 1</p>
-			<p>Buys: 1</p>
-			<p>Treasure: 1</p>
+			<p>Actions: {this.props.handWorth.actions}</p>
+			<p>Buys: {this.props.handWorth.buys}</p>
+			<p>Treasure: {this.props.handWorth.treasure}</p>
 		</div>
 	);
   }

@@ -23,9 +23,10 @@ export default class BoardTable extends Component {
 		let initialCards = this.setupPlayerHand();
 		let shuffledCards = this.shuffleHand(initialCards);
 		let drawnHand = this.drawHand(shuffledCards);
+		let handValues = this.calculateHand(drawnHand);
+
 
 		this.setState({playerDeck: shuffledCards, playerHand: drawnHand});
-
 	}
 
 	// Set up starting hand for player, of 4 coppers and 3 estates
@@ -61,29 +62,26 @@ export default class BoardTable extends Component {
 		return playerHand;
 	}
 
-	calculateHand(){
-		let playerHand = this.props.cards;
+	calculateHand(cards){
 		let actions = 0;
 		let buys = 0;
 		let treasure = 0;
 
-		playerHand.forEach(function(card,index){
-			console.log(index);
+		cards.forEach(function(card,index){
 			actions += card.actions;
 			buys += card.buys;
 			treasure += card.worth;
 		});
 
-		this.setState({actions: actions, buys: buys, treasure: treasure})
+		this.setState({handWorth: {actions: actions, buys: buys, treasure: treasure} })
 
 	}
 
 	render() {
-		console.log(this.state.playerHand);
-		console.log(this.state.playerDeck);
+		console.log(this.state);
 		return (
 			<div>
-				<OrganismPlaySurface cards={this.state.gameCards} />
+				<OrganismPlaySurface cards={this.state.gameCards} handWorth={this.state.handWorth} />
 				<OrganismPlayerHand cards={this.state.playerHand} />
 			</div>
 		);

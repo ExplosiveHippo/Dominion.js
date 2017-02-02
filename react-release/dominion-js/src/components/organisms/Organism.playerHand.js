@@ -29,7 +29,6 @@ export default class playerHand extends Component {
 	}
 
 	render() {
-	console.log(this.state);
 		return (
 			<div className="playerHand">
 				{this.props.cards.map(this.renderPlayerCards)}

@@ -9,12 +9,23 @@ export default class BoardTable extends Component {
 		super();
 		this.state = {
 			gameCards: cardJSON,
-			playerHand: []
+			playerDeck: [],
+			playerHand: [],
+			actions: 0,
+			buys: 0,
+			treasure: 0
 		};
 	}
 
 	componentWillMount(){
-		this.setupPlayerHand();
+		//this.setupPlayerHandPromise();
+
+		let initialCards = this.setupPlayerHand();
+		let shuffledCards = this.shuffleHand(initialCards);
+		let drawnHand = this.drawHand(shuffledCards);
+
+		this.setState({playerDeck: shuffledCards, playerHand: drawnHand});
+
 	}
 
 	// Set up starting hand for player, of 4 coppers and 3 estates
@@ -23,18 +34,53 @@ export default class BoardTable extends Component {
 
 		for(let i = 0; i <= 3; i++){
 			initialPlayerHand.push(this.state.gameCards.money[0]);
+			//console.log(initialPlayerHand);
 		}
 
 		for(let i = 0; i <= 2; i++){
 			initialPlayerHand.push(this.state.gameCards.victory[0]);
 		}
 
-		this.setState({playerHand: initialPlayerHand})
+		return initialPlayerHand;
 		
+	}
+
+	shuffleHand(cards){
+		for (var i = cards.length - 1; i > 0; i--) {
+			var j = Math.floor(Math.random() * (i + 1));
+			var temp = cards[i];
+			cards[i] = cards[j];
+			cards[j] = temp;
+		}
+
+		return cards;
+	}
+
+	drawHand(cards){
+		let playerHand = cards.splice(0, 5);
+		return playerHand;
+	}
+
+	calculateHand(){
+		let playerHand = this.props.cards;
+		let actions = 0;
+		let buys = 0;
+		let treasure = 0;
+
+		playerHand.forEach(function(card,index){
+			console.log(index);
+			actions += card.actions;
+			buys += card.buys;
+			treasure += card.worth;
+		});
+
+		this.setState({actions: actions, buys: buys, treasure: treasure})
+
 	}
 
 	render() {
 		console.log(this.state.playerHand);
+		console.log(this.state.playerDeck);
 		return (
 			<div>
 				<OrganismPlaySurface cards={this.state.gameCards} />

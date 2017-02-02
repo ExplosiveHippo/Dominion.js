@@ -3,21 +3,21 @@ import MoleculePlayerCard from '../molecules/Molecule.playerCard';
 import '../../scss/App.scss';
 
 export default class playerHand extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			actions: 0,
+			buys: 0,
+			treasure: 0
+		};
+	}
 
 	componentWillMount(){
-		this.shuffleCards();
+		//this.calculateHand();
 	}
 
-	shuffleCards(){
-		let playerHand = this.props.cards;
-		for (var i = playerHand.length - 1; i > 0; i--) {
-			var j = Math.floor(Math.random() * (i + 1));
-			var temp = playerHand[i];
-			playerHand[i] = playerHand[j];
-			playerHand[j] = temp;
-		}
-		return playerHand;
-	}
+
+	
 
 	renderPlayerCards(card, index){
 		// player hand is limited to 5 cards
@@ -29,6 +29,7 @@ export default class playerHand extends Component {
 	}
 
 	render() {
+	console.log(this.state);
 		return (
 			<div className="playerHand">
 				{this.props.cards.map(this.renderPlayerCards)}

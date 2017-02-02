@@ -9,7 +9,7 @@ export default class playerCard extends Component {
     return (
     	<div className="playerCard">
 			<img src={imageMap.large[this.props.cardData.name]} role="presentation" />
-			<AtomplayButton />
+			<AtomplayButton canPlay={this.props.cardData.type === 'action'}/>
 		</div>
 	);
   }

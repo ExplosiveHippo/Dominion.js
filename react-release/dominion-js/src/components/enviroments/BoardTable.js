@@ -23,10 +23,9 @@ export default class BoardTable extends Component {
 		let initialCards = this.setupPlayerHand();
 		let shuffledCards = this.shuffleHand(initialCards);
 		let drawnHand = this.drawHand(shuffledCards);
-		let handValues = this.calculateHand(drawnHand);
+		this.calculateHand(drawnHand);
 
-
-		this.setState({playerDeck: shuffledCards, playerHand: drawnHand});
+		this.setState({playerDeck: shuffledCards, playerHand: drawnHand, });
 	}
 
 	// Set up starting hand for player, of 4 coppers and 3 estates

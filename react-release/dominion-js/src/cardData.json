@@ -9,7 +9,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "councilroom",
@@ -20,7 +21,8 @@
 				"points": 0,
 				"cards": 4,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "festival",
@@ -31,7 +33,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "grandmarket",
@@ -42,7 +45,8 @@
 				"points": 0,
 				"cards": 1,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "laboratory",
@@ -53,7 +57,8 @@
 				"points": 0,
 				"cards": 3,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "market",
@@ -64,7 +69,8 @@
 				"points": 0,
 				"cards": 1,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "smithy",
@@ -75,7 +81,8 @@
 				"points": 0,
 				"cards": 3,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "village",
@@ -86,7 +93,8 @@
 				"points": 0,
 				"cards": 1,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "woodcutter",
@@ -97,7 +105,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "workersvillage",
@@ -108,7 +117,8 @@
 				"points": 0,
 				"cards": 1,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "oasis",
@@ -119,7 +129,8 @@
 				"points": 0,
 				"cards": 1,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "margrave",
@@ -130,7 +141,8 @@
 				"points": 0,
 				"cards": 3,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "bazaar",
@@ -141,7 +153,8 @@
 				"points": 0,
 				"cards": 1,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "action"
 			},
 			{
 				"name": "cache",
@@ -152,7 +165,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 10,
-				"special": "When you buy this card you also gain 2 coppers"
+				"special": "When you buy this card you also gain 2 coppers",
+				"type": "action"
 			},
 			{
 				"name": "gardens",
@@ -163,7 +177,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 10,
-				"special": "Worth 1 victory point for every 10 cards in your hand"
+				"special": "Worth 1 victory point for every 10 cards in your hand",
+				"type": "action"
 			}
 		],
 		"money": [
@@ -176,7 +191,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 30,
-				"special": ""
+				"special": "",
+				"type": "treasure"
 			},
 			{
 				"name": "silver",
@@ -187,7 +203,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 20,
-				"special": ""
+				"special": "",
+				"type": "treasure"
 			},
 			{
 				"name": "gold",
@@ -198,7 +215,8 @@
 				"points": 0,
 				"cards": 0,
 				"remaining": 15,
-				"special": ""
+				"special": "",
+				"type": "treasure"
 			}
 		],
 		"victory": [
@@ -211,7 +229,8 @@
 				"points": 1,
 				"cards": 0,
 				"remaining": 30,
-				"special": ""
+				"special": "",
+				"type": "victory"
 			},
 			{
 				"name": "duchy",
@@ -222,7 +241,8 @@
 				"points": 4,
 				"cards": 0,
 				"remaining": 10,
-				"special": ""
+				"special": "",
+				"type": "victory"
 			},
 			{
 				"name": "province",
@@ -233,7 +253,8 @@
 				"points": 6,
 				"cards": 0,
 				"remaining": 8,
-				"special": ""
+				"special": "",
+				"type": "victory"
 			}
 		]
 }

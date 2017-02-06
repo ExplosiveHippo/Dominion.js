@@ -5,10 +5,14 @@ import '../../scss/App.scss';
 
 export default class buyButton extends Component {
 
+	cardBought(){
+		console.log(this.state);
+	}
+
 	maybeRenderBuyButton(){
 		if(this.props.canBuy){
 			return(
-				<img src={imageMap.other.buyBtn} role="presentation" />
+				<img src={imageMap.other.buyBtn} onClick={this.cardBought} role="presentation" />
 			)
 		}
 		
@@ -21,5 +25,5 @@ export default class buyButton extends Component {
 			</div>
 		);
 	}
-	
+
 }

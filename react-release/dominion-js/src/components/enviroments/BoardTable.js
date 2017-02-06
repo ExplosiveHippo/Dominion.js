@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { createStore } from 'redux';
 import OrganismPlaySurface from '../organisms/Organism.playSurface';
 import OrganismPlayerHand from '../organisms/Organism.playerHand';
 import cardJSON from '../../cardData';
 
 export default class BoardTable extends Component {
 
-	constructor() {
+	constructor(props) {
 		super();
+		console.log(props);
 		this.state = {
 			gameCards: cardJSON,
 			playerDeck: [],

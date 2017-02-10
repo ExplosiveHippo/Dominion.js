@@ -1,1 +1,1 @@
-export const TOGGLE_TERMS_ACCEPT = 'TOGGLE_TERMS_ACCEPT';
+export const BUY_CARD = 'BUY_CARD';

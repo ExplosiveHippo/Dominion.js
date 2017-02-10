@@ -1,5 +1,9 @@
-import * as app from 'app';
+import * as types from '/actionTypes';
 
-export default {
-	...app
-};
+export function buyCard(card) {
+  return {
+    type: types.BUY_CARD,
+    card
+  };
+}
+

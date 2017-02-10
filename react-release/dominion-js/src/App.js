@@ -13,7 +13,11 @@ const store = createStoreWithMiddleware(reducer);
 
 class App extends Component {
   render() {
-    return (<BoardTable store={store}/>);
+    return (
+    	<Provider store={store}>
+    		<BoardTable />
+		</Provider>
+    );
   }
 }
 
